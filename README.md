@@ -2,7 +2,7 @@
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.100-blue.svg)](https://doi.org/10.25663/brainlife.app.100)
 
 # app-trk2tck
-This App converts a .trk file (TrackVis format) to a .tck file (MRtrix format).
+This App converts a .trk file (TrackVis format) to a .tck file (MRtrix format) using NiBabel.
 
 ### Author
 - [Soichi Hayashi](hayashis@iu.edu)
@@ -19,7 +19,9 @@ brainlife.io is publicly funded and for the sustainability of the project it is 
 ### Citations
 We kindly ask that you cite the following articles when publishing papers and code using this code. 
 
-1. Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+1. Tournier, J.‐D., Calamante, F. and Connelly, A. (2012), MRtrix: Diffusion tractography in crossing fiber regions. Int. J. Imaging Syst. Technol., 22: 53-66. doi:10.1002/ima.22005
+
+2. Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
 
 ## Running the app
 ### On [Brainlife.io](http://brainlife.io/) 
@@ -29,7 +31,7 @@ Input: \
 A .trk file (TrackVis format).
 
 Output: \
-a .tck file (MRtrix format).
+A .tck file (MRtrix format).
 
 ### Running Locally (on your machine)
 
@@ -59,4 +61,3 @@ This App only requires [singularity](https://www.sylabs.io/singularity/) to run.
 * NiBabel >=2.2.0: https://nipy.org/nibabel/
 
 #### MIT Copyright (c) 2020 brainlife.io The University of Texas at Austin and Indiana University
-
