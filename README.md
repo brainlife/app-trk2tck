@@ -1,3 +1,4 @@
+[![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.100-blue.svg)](https://doi.org/10.25663/brainlife.app.100)
 
 # app-trk2tck
@@ -15,16 +16,20 @@ brainlife.io is publicly funded and for the sustainability of the project it is 
 [![NSF-IIS-1912270](https://img.shields.io/badge/NSF_IIS-1912270-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1912270)
 [![NIH-NIBIB-R01EB029272](https://img.shields.io/badge/NIH_NIBIB-R01EB029272-green.svg)](https://grantome.com/grant/NIH/R01-EB029272-01)
 
-### Citation
-We kindly ask that you cite the following article when publishing papers and code using this code. 
+### Citations
+We kindly ask that you cite the following articles when publishing papers and code using this code. 
 
-Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+1. Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
 
-## Running the App 
-
-### On Brainlife.io
-
+## Running the app
+### On [Brainlife.io](http://brainlife.io/) 
 You can submit this App online at [https://doi.org/10.25663/bl.app.100](https://doi.org/10.25663/bl.app.100) via the "Execute" tab.
+
+Input: \
+A .trk file (TrackVis format).
+
+Output: \
+a .tck file (MRtrix format).
 
 ### Running Locally (on your machine)
 
@@ -43,16 +48,13 @@ You can submit this App online at [https://doi.org/10.25663/bl.app.100](https://
 ./main
 ```
 
-## Output
-
-The output file, called track.tck, will be generated under the current working directory (pwd). 
+### Output
+The output file, called `track.tck`, will be generated under the current working directory (pwd). 
 
 #### Product.json
-
 The secondary output of this app is `product.json`. This file allows web interfaces, DB and API calls on the results of the processing. 
 
 ### Dependencies
-
 This App only requires [singularity](https://www.sylabs.io/singularity/) to run. 
 
 #### MIT Copyright (c) 2020 brainlife.io The University of Texas at Austin and Indiana University
