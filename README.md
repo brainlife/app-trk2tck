@@ -55,7 +55,8 @@ The output file, called `track.tck`, will be generated under the current working
 The secondary output of this app is `product.json`. This file allows web interfaces, DB and API calls on the results of the processing. 
 
 ### Dependencies
-This App only requires [singularity](https://www.sylabs.io/singularity/) to run. 
+This App only requires [singularity](https://www.sylabs.io/singularity/) to run. If you don't have singularity, you will need to install following dependencies:
+* NiBabel >=2.2.0: https://nipy.org/nibabel/
 
 #### MIT Copyright (c) 2020 brainlife.io The University of Texas at Austin and Indiana University
 
