@@ -1,7 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.100-blue.svg)](https://doi.org/10.25663/brainlife.app.100)
-[![brainlife.io/app](https://img.shields.io/badge/brainlife.io-app-green.svg)](https://brainlife.io/app/5b9940206e02fb0028e11626)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.100-blue.svg)](https://doi.org/10.25663/brainlife.app.100)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.100-blue.svg)](https://doi.org/10.25663/bl.app.100)
 
 # app-trk2tck
 This App converts a .trk file (TrackVis format) to a .tck file (MRtrix format) using NiBabel.
