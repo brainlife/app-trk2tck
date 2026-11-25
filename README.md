@@ -10,7 +10,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT license"></a>
 </p>
 
-## 🧠 At a glance
+## At a glance
 
 <!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
 
@@ -20,19 +20,19 @@ Loads the .trk file with nibabel.streamlines and saves the same streamlines as t
 
 | | |
 |---|---|
-| 📥 **Inputs** | `neuro/track/trk` |
-| 📤 **Outputs** | `neuro/track/tck` |
-| 🐳 **Container** | `brainlife/dipy:0.14` |
-| ⚙️ **Resources** | 1 CPUs · 0.08 h walltime |
-| 🔗 **Run it** | [doi.org/10.25663/bl.app.100](https://doi.org/10.25663/bl.app.100) |
+| **Inputs** | `neuro/track/trk` |
+| **Outputs** | `neuro/track/tck` |
+| **Container** | `brainlife/dipy:0.14` |
+| **Resources** | 1 CPUs · 0.08 h walltime |
+| **Run it** | [doi.org/10.25663/bl.app.100](https://doi.org/10.25663/bl.app.100) |
 
-#### 📥 Inputs
+#### Inputs
 
 | Input | Datatype | Required | Description |
 |---|---|---|---|
 | `track` | `neuro/track/trk` | yes | Tractogram in TrackVis .trk format. |
 
-#### 📤 Outputs
+#### Outputs
 
 | Output | Datatype | Description |
 |---|---|---|
@@ -40,13 +40,13 @@ Loads the .trk file with nibabel.streamlines and saves the same streamlines as t
 
 <!-- brainlife-app:end -->
 
-## 🚀 Running the App
+## Running the App
 
-### ☁️ On brainlife.io
+### On brainlife.io
 
 Open the App at [doi.org/10.25663/bl.app.100](https://doi.org/10.25663/bl.app.100), choose a `neuro/track/trk` dataset (TrackVis format) and press **Execute**. The App loads the file with `nibabel.streamlines` and saves the same streamlines as a `neuro/track/tck` dataset (MRtrix format), so TrackVis tractograms can be used by Apps that require the tck datatype. Coordinates are converted as NiBabel handles them; no filtering or resampling is done.
 
-### 💻 Locally
+### Locally
 
 You need [Singularity/Apptainer](https://apptainer.org/). NiBabel runs inside the DIPY 0.14 container.
 
@@ -65,13 +65,13 @@ You need [Singularity/Apptainer](https://apptainer.org/). NiBabel runs inside th
    ./main
    ```
 
-## 📦 Outputs
+## Outputs
 
 ```text
 track.tck   the same tractogram in MRtrix format, written to the working directory
 ```
 
-## 📚 Citing
+## Citing
 
 > [!TIP]
 > If you use this App in your work, please cite the App, the software it builds on and brainlife.io (below). GitHub's **Cite this repository** button gives the App citation in APA and BibTeX.
@@ -83,13 +83,13 @@ track.tck   the same tractogram in MRtrix format, written to the working directo
 - Garyfallidis et al. Dipy, a library for the analysis of diffusion MRI data. *Frontiers in Neuroinformatics* 8 (2014). [doi:10.3389/fninf.2014.00008](https://doi.org/10.3389/fninf.2014.00008)
 - Hayashi S, Caron BA, Heinsfeld AS, et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. *Nature Methods* 21:809–813 (2024). [doi:10.1038/s41592-024-02237-2](https://doi.org/10.1038/s41592-024-02237-2)
 
-## 👥 Authors
+## Authors
 
 - Soichi Hayashi
 
 **Contributors:** Giulia Bertò
 
-## 💰 Funding
+## Funding
 
 [![Wellcome-226486/Z/22/Z](https://img.shields.io/badge/Wellcome-226486%2FZ%2F22%2FZ-purple.svg)](https://wellcome.org/)
 [![NIH-NINDS-U24NS140384](https://img.shields.io/badge/NIH_NINDS-U24NS140384-green.svg)](https://reporter.nih.gov/project-details/11261037)
@@ -108,6 +108,6 @@ track.tck   the same tractogram in MRtrix format, written to the working directo
 
 <sub>brainlife.io is publicly funded, and acknowledging that support helps keep it running. This App was developed with support from Wellcome, the U.S. National Institutes of Health (including the BRAIN Initiative BRAIN CONNECTS program: The Axonal Projectome EXchange, U24NS140384, and the Center for Mesoscale Connectomics, UM1NS132207) and the U.S. National Science Foundation.</sub>
 
-## ⚖️ License
+## License
 
 [MIT](LICENSE).
