@@ -2,6 +2,31 @@
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.100-blue.svg)](https://doi.org/10.25663/bl.app.100)
 
 # app-trk2tck
+
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+**Converts a TrackVis .trk tractogram to MRtrix .tck format with NiBabel; a format conversion utility.**
+
+Loads the .trk file with nibabel.streamlines and saves the same streamlines as track.tck. Use it to feed TrackVis tractograms to Apps that require the tck datatype. Streamline coordinates are converted as handled by NiBabel; no filtering or resampling is done.
+
+Run it on brainlife.io: [https://doi.org/10.25663/bl.app.100](https://doi.org/10.25663/bl.app.100)
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `track` | `neuro/track/trk` | yes | Tractogram in TrackVis .trk format. |
+
+| Output | Datatype | Description |
+|---|---|---|
+| `output` | `neuro/track/tck` | The same tractogram in MRtrix .tck format. |
+
+Runtime: container `brainlife/dipy:0.14`; 1 CPUs; 0.08 h walltime.
+
+Please cite:
+- Tournier J-D, Calamante F, Connelly A. MRtrix: Diffusion tractography in crossing fiber regions. Int J Imaging Syst Technol 22:53-66 (2012). [doi:10.1002/ima.22005](https://doi.org/10.1002/ima.22005)
+- Avesani P, McPherson B, Hayashi S, et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+
+<!-- brainlife-app:end -->
+
 This App converts a .trk file (TrackVis format) to a .tck file (MRtrix format) using NiBabel.
 
 ### Author
